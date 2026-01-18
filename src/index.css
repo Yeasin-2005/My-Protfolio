@@ -1,15 +1,29 @@
 @import "tailwindcss";
+@import 'tailwind-animations';
 
 @theme {
   --breakpoint-*: initial;
   --breakpoint-sm:540px ;
   --breakpoint-md:720px ;
   --breakpoint-lg:960px ;
-  --breakpoint-xl:1170px ;
-  --breakpoint-xxl:1320px ;
+  --breakpoint-xl:1100px ;
+  --color-primary:#A395E9;
+  --color-body:#0B111E;
+  --color-secondary:#252c38;
 }
  @layer utilities{
   .container{
     margin: auto;
   }
  }
+ body{
+  background-color: #0B111E;
+ }
+ .custom-slow {
+  /* animation-duration: 3s;  */
+  color: #252c38;
+}
+nav{
+  background-color: rgb(109, 152, 152);
+  color: white;
+}

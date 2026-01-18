@@ -1,31 +1,24 @@
 import React from 'react'
-import 'animate.css';
-import Container from './Container';
-import Buttan from './Buttan';
-import Flex from './Flex';
+import Container from './Container'
+import Flex from './Flex'
+import Button from './Button'
+import { IoLogoGithub } from "react-icons/io5";
 
 
 const Navbar = () => {
   return (
-    <>
+    <div>
       <Container>
-        <nav className='py-4 bg-blue-600 rounded-2xl mt-5 mb-10 animate__animated animate__backInDown'>
-          <Flex className="justify-center items-center">
-            <ul>
-              <Flex className='gap-14'>
-                <li>Home</li>
-                <li>About me</li>
-                <li>Project</li>
-                <li>Contact</li>
-                <li>GitHub</li>
-              </Flex>
-            </ul>
-            <div>
-            </div>
+        <Flex className='justify-between items-center mt-4 mb-20'>
+          <div><h1 className='text-primary text-2xl font-bold'>JISAN</h1></div>
+          <Flex className='gap-7 items-center'>
+            <Button>Contact</Button>
+            <div className='p-3 bg-[#16223c] rounded-[23px] cursor-pointer transition-transform duration-300 ease-out hover:scale-110'><IoLogoGithub className='text-primary text-4xl'/></div>
           </Flex>
-        </nav>
+        </Flex>
       </Container>
-    </>
+    </div>
   )
 }
+
 export default Navbar
