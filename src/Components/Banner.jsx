@@ -15,6 +15,7 @@ const Banner = () => {
                 <h2 className='text-2xl font-bold'>Hi, I’m <span className='text-5xl font-bold'> Jisan.</span></h2>
                 <h3 className='text-2xl font-medium mt-5 w-150'>Frontend Developer, Crafting Clean, Super Fast, Scalable & Performance-Driven Web Interfaces.</h3>
             </div>
+            <h1>wjerghrfwjeshbfgrvjsbnfxcdvsw</h1>
             <div><img src={black} alt="" className='rounded-4xl h-100 w-80 '/></div>
         </Flex>
   {/* Example 1: Defaults (hover to decrypt) */}
