@@ -16,10 +16,12 @@ export default function MyProjects() {
                 className="mb-20"
             />
             <Flex className='justify-between'>
+                <a href="https://e-commerce-website-silk-kappa.vercel.app/" target="_blank">
                 <ProjectCard
                     ImgSrc={project1}
                     ProjectName="E-Commerce Website"
                 />
+                </a>
                 <ProjectCard
                     ImgSrc={project2}
                     ProjectName="Company,s website"

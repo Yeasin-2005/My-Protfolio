@@ -10,6 +10,7 @@ import Services from './Components/Services'
 import MyProjects from './Components/MyProjects'
 import ClaintReview from './Components/ClaintReview'
 import Contact from './Components/Contact'
+import Footer from './Components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,7 +25,7 @@ function App() {
       <Services />
       <ClaintReview/>
       <Contact/>
-
+      <Footer/>
     </>
   )
 }
