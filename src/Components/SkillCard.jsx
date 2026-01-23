@@ -3,7 +3,7 @@ import Flex from './Flex'
 
 const SkillCard = ({ head,icon1,icon2,icon3,icon4,icon5,icon6,skill1,skill2,skill3,skill4,skill5,skill6 }) => {
     return (
-        <div className='h-100 w-130 bg-secondary text-center rounded-4xl'>
+        <div className='h-100 w-130 bg-secondary text-center rounded-4xl timeline-view animate-blurred-fade-in animate-range-[entry_10%_contain_30%]'>
             <h1 className='text-primary text-3xl py-15 font-medium'>{head}</h1>
             <Flex className='px-15 gap-x-25 '>
                <ul className='flex flex-col gap-y-10'>

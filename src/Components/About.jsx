@@ -11,17 +11,19 @@ import Button from "../Components/Button"
 
 const About = () => {
   return (
-    <div id='aboutMe'>
+    <div id="aboutMe" className="timeline-view animate-blurred-fade-in animate-range-[entry_10%_contain_30%]">
       <Container>
         <SectionHead
           title="My Intro"
           head="About Me"
-          className="mt-60 mb-20"
+          className="mt-50 mb-10 md:mt-60 md:mb-20"
         />
-        <Flex className='justify-between'>
+        <Flex className='flex-col md:flex-row  md:justify-between  '>
+          <div className='mx-auto'>
           <Img />
+          </div>
           <div>
-            <Flex className='gap-10 items-center'>
+            <Flex className='justify-center md:justify-between gap-y-3 mt-5 md:mt-0 flex-wrap md:gap-10 items-center'>
               <AboutCard
                 icon={<AiFillAlipayCircle />}
                 head="Experience"
@@ -38,14 +40,15 @@ const About = () => {
                 text="Online 24/7"
               />
             </Flex>
-            <p className='w-150 text-white py-4'>Frontend Developer passionate about building modern, responsive, and user-friendly interfaces with React and Tailwind CSS, focused on clean code and pixel-perfect UI.</p>
+            <p className='md:w-150 text-white py-4 text-center'>Frontend Developer passionate about building modern, responsive, and user-friendly interfaces with React and Tailwind CSS, focused on clean code and pixel-perfect UI.</p>
             <Button
+            className="mx-auto"
               onClick={() => {
                 document.getElementById("contact")?.scrollIntoView({
                   behavior: "smooth"
                 })
               }}
-            >Contact Me</Button>
+            >Hire Me</Button>
           </div>
         </Flex>
       </Container>

@@ -15,11 +15,12 @@ export default function MyProjects() {
                 title="My Projects"
                 className="mb-20"
             />
-            <Flex className='justify-between'>
+            <Flex className='justify-between timeline-view animate-blurred-fade-in animate-range-[entry_10%_contain_30%]'>
                 <a href="https://e-commerce-website-silk-kappa.vercel.app/" target="_blank">
                 <ProjectCard
                     ImgSrc={project1}
                     ProjectName="E-Commerce Website"
+                    className=""
                 />
                 </a>
                 <ProjectCard
