@@ -20,14 +20,29 @@ import { SiVorondesign } from "react-icons/si";
 
 const Experience = () => {
   return (
-    <div className='mt-30 mb-30'>
+    <div className='mt-20 mb-20 md:mt-30 md:mb-30'>
       <Container>
         <SectionHead
         title="My Abilities"
         head="My Skills"
         className="mb-20"
         />
-        <Flex className='justify-between'>
+        <Flex className='flex-col md:flex-row justify-center md:justify-between items-center md:items-start gap-y-4'>
+          <SkillCard
+            head="Major"
+            icon1={<FaReact />}
+            icon5={<TbBrandFigma />}
+            skill5="Figma"
+            skill1="React"
+            icon4={<DiJavascript1 />}
+            skill4="JavaScript"
+            icon2={<RiTailwindCssFill />}
+            skill2="Tailwind"
+            icon3={<DiResponsive />}
+            skill3="Responsive"
+            icon6={<SiFirebase />}
+            skill6="Firebase"
+            />
             <SkillCard
             head="Frontend Development"
             icon1={<FaHtml5 />}
@@ -43,21 +58,7 @@ const Experience = () => {
             skill5="UI / UX"
             skill6="Interaction"
             />
-            <SkillCard
-            head="Major"
-            icon1={<FaReact />}
-            icon5={<TbBrandFigma />}
-            skill5="Figma"
-            skill1="React"
-            icon4={<DiJavascript1 />}
-            skill4="JavaScript"
-            icon2={<RiTailwindCssFill />}
-            skill2="Tailwind"
-            icon3={<DiResponsive />}
-            skill3="Responsive"
-            icon6={<SiFirebase />}
-            skill6="Firebase"
-            />
+            
         </Flex>
       </Container>
     </div>

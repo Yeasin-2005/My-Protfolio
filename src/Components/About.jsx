@@ -11,7 +11,7 @@ import Button from "../Components/Button"
 
 const About = () => {
   return (
-    <div id="aboutMe" className="timeline-view animate-blurred-fade-in animate-range-[entry_10%_contain_30%]">
+    <div id="aboutMe" className="">
       <Container>
         <SectionHead
           title="My Intro"

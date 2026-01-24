@@ -15,7 +15,7 @@ const ClaintReview = () => {
         head="Claint's Review"
         className="mt-30 mb-20"
         />
-        <Flex className='justify-between'>
+        <Flex className='flex-col md:flex-row justify-center md:justify-between items-center md:items-start gap-y-4 '>
             <ClaintCard
             ImgSrc={man1}
             claintname="Albart F"

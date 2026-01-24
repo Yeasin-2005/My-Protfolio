@@ -9,19 +9,19 @@ import { FaTwitter } from "react-icons/fa";
 import Button from './Button'
 import { useState } from "react";
 
-    const Contact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+const Contact = () => {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
 
-  const handleSendMessage = () => {
-    if (!name || !email || !message) {
-      alert("Please fill all fields");
-      return;
-    }
+    const handleSendMessage = () => {
+        if (!name || !email || !message) {
+            alert("Please fill all fields");
+            return;
+        }
 
-    const subject = `Portfolio Message from ${name}`;
-    const body = `
+        const subject = `Portfolio Message from ${name}`;
+        const body = `
 Name: ${name}
 Email: ${email}
 
@@ -29,10 +29,10 @@ Message:
 ${message}
     `;
 
-    window.location.href = `https://mail.google.com/mail/?view=cm&to=yeasinhossainjesun@gmail.com =${encodeURIComponent(
-      subject
-    )}&body=${encodeURIComponent(body)}`;
-  };
+        window.location.href = `https://mail.google.com/mail/?view=cm&to=yeasinhossainjesun@gmail.com =${encodeURIComponent(
+            subject
+        )}&body=${encodeURIComponent(body)}`;
+    };
 
     return (
         <div id='contact'>
@@ -81,21 +81,21 @@ ${message}
                         </Flex>
                     </div>
                     <div className='text-center w-[45%]'>
-                        <h2 className='text-white text-2xl font-bold pb-8'>Send Me Your Message</h2>
+                        <h2 className='text-white text-2xl font-bold pb-8'>Your Message</h2>
                         <div className='flex flex-col gap-y-5'>
                             <div className='text-start!'>
                                 <label htmlFor="text" className=' text-white   pl-3 '>Your Name</label>
-                                <input type="text" className='w-full py-5 pl-5 outline-3 mt-2 outline-secondary rounded-2xl text-white' placeholder='Enter Your Name' value={name} onChange={(e) => setName(e.target.value)}/>
+                                <input type="text" className='w-full py-5 pl-5 outline-3 mt-2 outline-secondary rounded-2xl text-white' placeholder='Enter Your Name' value={name} onChange={(e) => setName(e.target.value)} />
                             </div>
                             <div className='text-start!'>
                                 <label htmlFor="text" className=' text-white pl-3 '>Your Email</label>
                                 <input type="text" className='w-full py-5 pl-5 outline-3 mt-2 outline-secondary rounded-2xl text-white' placeholder='Enter Your Mail' value={email}
-            onChange={(e) => setEmail(e.target.value)}/>
+                                    onChange={(e) => setEmail(e.target.value)} />
                             </div>
                             <div className='text-start!'>
                                 <label htmlFor="text" className=' text-white pl-3 '>Your Message</label>
                                 <input type="text" className='mb-5 w-full pt-5 pb-17 pl-5 outline-3 mt-2 outline-secondary rounded-2xl text-white' placeholder='Enter Your Message' value={message}
-            onChange={(e) => setMessage(e.target.value)}/>
+                                    onChange={(e) => setMessage(e.target.value)} />
                             </div>
                         </div>
                         <Button onClick={handleSendMessage}>Send Message</Button>
