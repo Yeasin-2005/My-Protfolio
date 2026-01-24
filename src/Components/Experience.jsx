@@ -20,7 +20,7 @@ import { SiVorondesign } from "react-icons/si";
 
 const Experience = () => {
   return (
-    <div className='mt-20 mb-20 md:mt-30 md:mb-30'>
+    <div id='skills' className='mt-20 mb-20 md:mt-30 md:mb-30'>
       <Container>
         <SectionHead
         title="My Abilities"

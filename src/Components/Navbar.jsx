@@ -7,7 +7,7 @@ import { IoLogoGithub } from "react-icons/io5";
 
 const Navbar = () => {
   return (
-    <div>
+    <div id='nav'>
       <Container className="px-5 md:px-0">
         <Flex className='justify-between items-center mt-12 md:mt-2 md:mb-20 '>
           <div><h1 className='text-primary text-2xl font-bold'>JISAN</h1></div>

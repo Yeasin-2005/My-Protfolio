@@ -44,7 +44,7 @@ ${message}
                 />
                 <Flex className='justify-between'>
                     <div className='text-center w-[45%]'>
-                        <h2 className='text-white text-2xl font-bold pb-8'>Talk to me</h2>
+                        <h2 className='text-white text-xl md:text-2xl font-bold pb-8'>Talk to me</h2>
                         <Flex className='flex-col gap-y-7'>
                             <a
                                 href="https://wa.me/8801781084172"
@@ -68,7 +68,7 @@ ${message}
                                 <AboutCard
                                     icon={<IoIosMailUnread />}
                                     head="Email"
-                                    text="yeasinhossainjesun@gmail.com"
+                                    text=""
                                     className="w-full!"
                                 />
                             </a>
@@ -81,7 +81,7 @@ ${message}
                         </Flex>
                     </div>
                     <div className='text-center w-[45%]'>
-                        <h2 className='text-white text-2xl font-bold pb-8'>Your Message</h2>
+                        <h2 className='text-white text-xl md:text-2xl font-bold pb-8'>Your Message</h2>
                         <div className='flex flex-col gap-y-5'>
                             <div className='text-start!'>
                                 <label htmlFor="text" className=' text-white   pl-3 '>Your Name</label>
