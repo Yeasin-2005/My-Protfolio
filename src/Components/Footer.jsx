@@ -12,22 +12,22 @@ const Footer = () => {
         <h2 className='text-center text-body font-bold text-2xl'>JISAN</h2>
         <div className='flex justify-center mt-10'>
           <ul className='flex gap-10 text-body text-lg mx-auto'>
-            <li onClick={()=>{
+            <li className='cursor-pointer' onClick={()=>{
                 document.getElementById("nav")?.scrollIntoView({
                   behavior:"smooth"
                 })
               }}>Home</li>
-            <li onClick={()=>{
+            <li className='cursor-pointer' onClick={()=>{
                 document.getElementById("aboutMe")?.scrollIntoView({
                   behavior:"smooth"
                 })
               }}>About</li>
-            <li onClick={()=>{
+            <li className='cursor-pointer' onClick={()=>{
                 document.getElementById("skills")?.scrollIntoView({
                   behavior:"smooth"
                 })
               }}>Skills</li>
-            <li onClick={() =>
+            <li className='cursor-pointer' onClick={() =>
                 document.getElementById("contact")?.scrollIntoView({
                   behavior: "smooth",
                 })}>Contact</li>
