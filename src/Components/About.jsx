@@ -23,7 +23,7 @@ const About = () => {
           <Img />
           </div>
           <div>
-            <Flex className='justify-center gap-x-10 md:gap-x-0 md:justify-between gap-y-3 mt-5 md:mt-0 flex-wrap md:gap-10 items-center'>
+            <Flex className='justify-center gap-x-10 md:gap-x-10 md:justify-between gap-y-3 mt-5 md:mt-0 flex-wrap md:gap-10 items-center'>
               <AboutCard
                 icon={<AiFillAlipayCircle />}
                 head="Experience"
