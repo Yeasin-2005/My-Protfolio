@@ -1,9 +1,7 @@
 import React from 'react'
 import Container from './Container'
 import Flex from './Flex'
-// import jisan from "../assets/jisan.jpg"
 import black from "../assets/black.png"
-import About from './About'
 import Button from './Button'
 import 'animate.css';
 
